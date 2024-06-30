@@ -2,13 +2,8 @@
 
 {% block content %}
 
-<!-- Use the user's header image as a background for this div -->
-<div id="warbler-hero" class="full-width" style="background-image: url('{{ user.header_image_url }}');">
-</div>
-
-<!-- Profile avatar image -->
+<div id="warbler-hero" class="full-width" style="background-image: url('{{ user.header_image_url }}');"></div>
 <img src="{{ user.image_url }}" alt="Image for {{ user.username }}" id="profile-avatar">
-
 <div class="row full-width">
   <div class="container">
     <div class="row justify-content-end">
@@ -34,7 +29,9 @@
           </li>
           <li class="stat">
             <p class="small">Likes</p>
-            <h4>TBD</h4>
+            <h4>
+              <a href="/users/{{user.id}}/likes">{{ user.likes|length }}</a>
+            </h4>
           </li>
           <div class="ml-auto">
             {% if g.user.id == user.id %}
@@ -63,9 +60,7 @@
 <div class="row">
   <div class="col-sm-3">
     <h4 id="sidebar-username">@{{ user.username }}</h4>
-    <!-- Display user's bio -->
     <p>{{ user.bio }}</p>
-    <!-- Display user's location -->
     <p class="user-location"><span class="fa fa-map-marker"></span> {{ user.location }}</p>
   </div>
 

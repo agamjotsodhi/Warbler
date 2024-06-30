@@ -480,9 +480,12 @@ p.card-bio {
 
 .edit-btn-area > .btn {
   width: 48%;
+  margin-left: auto;
+  margin-right: 20px;
 }
 
 /* =========================== Message Show page */
+
 
 .bg {
   position: absolute;
@@ -508,10 +511,10 @@ p.card-bio {
   min-width: 105px;
 }
 
-#messages-form {
+.messages-like {
   position: absolute;
-  top: 4px;
-  right: 4px;
+  top: 6px;
+  right: 6px;
   z-index: 1;
 }
 
@@ -521,6 +524,7 @@ p.card-bio {
   letter-spacing: 0.01em;
   margin-bottom: 10px;
 }
+
 
 /* ================================ 404 page */
 
