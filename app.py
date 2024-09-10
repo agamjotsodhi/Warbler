@@ -19,7 +19,7 @@ app = Flask(__name__)
 #     os.environ.get('DATABASE_URL', 'postgresql:///warbler'))
 
 # Supabase database connection, for rendering purposes:
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres.glhqtarqmjmbbwwznvap:funkypunch27!!@aws-0-ca-central-1.pooler.supabase.com:6543/postgres'
+app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://postgres.glhqtarqmjmbbwwznvap:{os.getenv('DB_PASSWORD')}@aws-0-ca-central-1.pooler.supabase.com:6543/postgres"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_ECHO'] = False
 app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = True
