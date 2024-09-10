@@ -33,7 +33,7 @@ SQLAlchemy==1.2.12
 text-unidecode==1.2
 traitlets==4.3.2
 wcwidth==0.1.7
-Werkzeug==0.14.1
+Werkzeug==2.3.7
 WTForms==2.2.1
 gunicorn
 psycopg2-binary==2.9.6  # Updated to use the pre-built binary
