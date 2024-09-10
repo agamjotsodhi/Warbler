@@ -3,7 +3,7 @@ backcall==0.1.0
 bcrypt==3.1.4
 beautifulsoup4==4.8.2
 blinker==1.4
-cffi==1.11.5
+cffi==1.15.1  # Updated to a more stable version
 Click==7.0
 decorator==4.3.0
 Faker==0.9.1
@@ -36,6 +36,4 @@ wcwidth==0.1.7
 Werkzeug==0.14.1
 WTForms==2.2.1
 gunicorn
-psycopg2-binary==2.9.6
-
-
+psycopg2-binary==2.9.6  # Updated to use the pre-built binary
